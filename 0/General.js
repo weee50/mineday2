@@ -69,6 +69,7 @@ function leftClick(x, y)
   if (!boardGenerated)
   {
     board = generateBoard(x, y)
+    boardStartTime = new Date().getTime();
     timer = setInterval(timerTick, 20);
     updateAllNeighbors();
     boardGenerated = true;
