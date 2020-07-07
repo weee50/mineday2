@@ -28,7 +28,7 @@ numbersNeeded.push(32, 48, 64, 128, -10, -12, -14, -16, -24, -32, -40, -64, -96,
 
 const NEED_TO_LOAD = {
     mines: [1, 2, 3, "Anti", "Double_Inverse"], // also controls basically everything except numbers
-    numbers: range(-8, 25)
+    numbers: numbersNeeded
 }
 
 for (i = 0; i < NEED_TO_LOAD.mines.length; i++)
