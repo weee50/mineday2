@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MineDay S2</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <script src="Mine.js"></script>
+    <script src="Empty.js"></script>
+    <script src="Square.js"></script>
+    <script src="Board.js"></script>
+  </head>
+  <body>
+    <center>
+      <h1>Week 1: Double Inverse Mines</h1>
+      <table style="width:100">
+        <tr>
+          <td><canvas id="board" width="320" height="320" style="border:1px solid #000000;"></canvas></td>
+          <td style="min-width:100px">
+            <div id="mineCounters"></div><br>
+            <p id="timer">00:00:00</p>
+            <button onclick="startNewGame()">Restart</button>
+          </td>
+        </tr>
+      </table>
+      <br><br>
+      <table>
+        <tr>
+          <td style="min-width:700px">
+            Today adds double inverse mines, a type of mine that multiplies the neighbor count of the surrounding squares by -2.<br>
+            They were going to be inverse mines (that multiply squares by -1), but that led to too much guessing, so I did this instead.<br>
+            This always applies after normal mines, so having three single mines and one double inverse mine will always result in a count of 3 × -2 = -6.<br>
+            The largest number you can encounter this week is 128 (2 normal mines + 6 D.I. mines), and the lowest number you can encounter is -128 (1 normal mine + 7 D.I. mines).<br>
+            Also, this week is the first week where you can encounter a negative number lower than -8, something that was harder to do with the original Minesveeper code!<br>
+            Similar strategies to double mines can be used, but you will sometimes still have to guess whenever many double inverse mines are clustered.
+          </td>
+        </tr>
+      </table>
+    </center>
+    <script src="Drawing.js"></script>
+    <script src="Generate.js"></script>
+    <script src="General.js"></script>
+    <script src="Setup.js"></script>
+  </body>
+</html>

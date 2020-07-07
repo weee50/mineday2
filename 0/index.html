@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MineDay S2</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <script src="Mine.js"></script>
+    <script src="Empty.js"></script>
+    <script src="Square.js"></script>
+    <script src="Board.js"></script>
+  </head>
+  <body>
+    <center>
+      <h1>Week 0: Warmup</h1>
+      <table style="width:100">
+        <tr>
+          <td><canvas id="board" width="320" height="320" style="border:1px solid #000000;"></canvas></td>
+          <td style="min-width:100px">
+            <div id="mineCounters"></div><br>
+            <p id="timer">00:00:00</p>
+            <button onclick="startNewGame()">Restart</button>
+          </td>
+        </tr>
+      </table>
+      <br><br>
+      <table>
+        <tr>
+          <td style="min-width:700px">
+            First of all, again, sorry this doesn't look as good as the original Minesveeper. I'm not really that good at CSS, so you just get plain design.<br>
+            But anyway, this is designed to just be a warmup, because I know some of you probably haven't played Minesweeper in a while.<br>
+            There are just 30 normal mines and 30 double mines today. No new features, hence why this is called "Week 0" and not "Week 1" or anything.
+          </td>
+        </tr>
+      </table>
+    </center>
+    <script src="Drawing.js"></script>
+    <script src="Generate.js"></script>
+    <script src="General.js"></script>
+    <script src="Setup.js"></script>
+  </body>
+</html>
