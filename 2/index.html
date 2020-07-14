@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MineDay S2</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <script src="Mine.js"></script>
+    <script src="Empty.js"></script>
+    <script src="Square.js"></script>
+    <script src="Board.js"></script>
+  </head>
+  <body>
+    <center>
+      <h1>Week 2: Odd Numbers</h1>
+      <table style="width:100">
+        <tr>
+          <td><canvas id="board" width="320" height="320" style="border:1px solid #000000;"></canvas></td>
+          <td style="min-width:100px">
+            <div id="mineCounters"></div><br>
+            <p id="timer">00:00:00</p>
+            <button onclick="startNewGame()">Restart</button>
+          </td>
+        </tr>
+      </table>
+      <br><br>
+      <table>
+        <tr>
+          <td style="min-width:700px">
+            <b>NOTE: If the board looks invisible, simply click on it. It will generate like normal, and everything will be visible.</b><br><br>
+            Today, there are single, triple, and pentuple (5) mines. They work as you would expect, counting as 1, 3, and 5 mines respectively.<br>
+            Yes, you will have to double right click for a triple flag and triple right click for a quintuple flag. The alternative would be allowing double and quadruple flags to exist, which would both make getting quintuple flags take more time and allow useless double/quadruple flags to exist.<br>
+            The fact that all of these numbers are odd means a few different logical deductions can be made. For example, if a number is even, there must be an even number of squares with some sort of mine around them, and a similar thing happens with odd numbers.
+
+          </td>
+        </tr>
+      </table>
+    </center>
+    <script src="Drawing.js"></script>
+    <script src="Generate.js"></script>
+    <script src="General.js"></script>
+    <script src="Setup.js"></script>
+  </body>
+</html>
